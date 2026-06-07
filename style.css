@@ -1,0 +1,127 @@
+/* Center everything nicely on the page background */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Card Container */
+.main {
+  width: 100%;
+  max-width: 400px; /* Expands nicely for both the form and the card */
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Clean modern shadow instead of black border */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 24px;
+  box-sizing: border-box;
+}
+
+/* Container styling for the form */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Base styles for all text inputs */
+form input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #495057;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Interactive focus state for inputs */
+form input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+
+/* Subtle styling for placeholder text */
+form input[type="text"]::placeholder {
+  color: #adb5bd;
+}
+
+/* Styling for the submit button */
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* Submit button hover and active states */
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+form input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* Profile Picture Wrapper */
+.profile {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Typography Styles */
+.main h3 {
+  margin: 0 0 8px 0;
+  color: #212529;
+  font-size: 22px;
+}
+
+.main h5 {
+  margin: 0 0 16px 0;
+  color: #6c757d;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.main p {
+  margin: 0;
+  color: #495057;
+  font-size: 14px;
+  line-height: 1.6;
+}
